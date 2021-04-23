@@ -1,0 +1,22 @@
+<p></p>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <h3>Formatar Estoque </h3>
+    <label for="codigo">Códigio</label>
+    <input type="text" name="codigo" id="codigo"  [(ngModel)]="item.codigo"/>
+    <label for="peca">Peça</label>
+    <input type="text" name="peca" id="peca"  [(ngModel)]="item.peca"/>
+    <label for="estoque">Estoque</label>
+    <input type="text" name="estoque" id="estoque"  [(ngModel)]="item.estoque"/>
+    <label for="codigo">Maximo Estoque</label>
+    <input type="text" name="maxEstoque" id="maxEstoque" [(ngModel)]="item.maxEstoque"/>
+    <label for="Minimo">Minimo Estoque</label>
+
+    <input type="text" name="minEstoque" id="minEstoque"  [(ngModel)]="item.minEstoque"/>
+
+        <div>
+            <button type="submit">Cadastrar</button>
+            <button routerLink="/produtos">Cancelar</button>             
+        </div>
+</form>
+
+

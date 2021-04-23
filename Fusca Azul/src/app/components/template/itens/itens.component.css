@@ -1,0 +1,49 @@
+section.itens .lista{
+    margin-left: 20px;
+    margin-top:20px;
+    border-bottom: 1px solid #ccc;
+}
+.container{
+   display: flex;
+}
+.produtos{
+    width: 100%;
+}
+
+.produto-uni{
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+
+.produto-uni a{
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:500px){
+
+    .produto-uni{
+        margin-left: 10px;
+    }
+
+  .itens li{
+    text-decoration: none;
+  }
+    .produto-uni a{
+        position:relative;
+        display: block;
+        right: 0;
+        text-align: center;
+    
+    }
+
+
+}

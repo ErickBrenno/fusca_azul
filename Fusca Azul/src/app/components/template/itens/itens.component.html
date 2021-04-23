@@ -1,0 +1,21 @@
+ <section class="itens">
+    <div class="lista">
+        <h3>Produtos da Loja</h3>
+    </div><!--lista-->
+
+    <div class="container">
+        <div class="produtos">
+            <div *ngFor="let item of itens, let i = index" class="produto-uni">
+                    
+                <a [routerLink]="['/editar',i]" >
+                Index:  {{i}} 
+                Codigo: {{item.codigo}} 
+                Peça: {{item.peca}}
+                Estoque: {{item.estoque}}/
+                Maximo: {{item.maxEstoque}}/ 
+                Minimo: ({{item.minEstoque}}) 
+               </a>
+            </div>
+        </div>
+    </div>
+</section>

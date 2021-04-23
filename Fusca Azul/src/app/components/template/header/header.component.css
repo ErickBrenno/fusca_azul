@@ -1,0 +1,75 @@
+
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.header a{
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .sair{
+    flex-grow: 2;
+    padding-right: 15px;
+    text-align: right;
+
+}
+
+
+img{
+    margin:20px;
+    width: 70px;
+}
+
+
+.img{
+    max-height: 45px;
+    display: block;
+    text-align: center;
+}
+
+.header{
+    background-color: red;
+}
+
+
+
+
+@media screen and (max-width:500px){
+ 
+    .header {
+        display: block;
+        text-align: center;;
+
+    }
+    .header a{
+        display: block;
+    }
+
+    .header .sair{
+        display: block;
+        text-align: right;
+        padding-right: 15px;
+      
+    }
+
+    .barra input[type=text]{
+        width: 100%;
+        padding-left: 10px;
+        margin-left: 0;
+    }
+    section.itens .lista{
+        margin-left: 10px;
+    }
+
+    input[type=submit]{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .produto-uni{
+        margin-left: 10px;
+    }
+}
